@@ -1,0 +1,52 @@
+.offers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+.icon {
+  max-width: 24px;
+}
+.cardTitle {
+  color: #e0e0e0;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -0.04px;
+  padding-top: 5px;
+}
+.info {
+  color: #7e808a;
+
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.04px;
+}
+@media only screen and (max-width: 991px) {
+  .offers {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .offers {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 25px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .offers {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px 25px;
+  }
+}

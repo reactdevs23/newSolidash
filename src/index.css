@@ -1,13 +1,84 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background: #0d0d10;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  background: transparent;
+}
+button:hover {
+  transform: translateY(-3px);
+}
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.overflow {
+  scrollbar-width: thin;
+  scrollbar-color: #7960ff rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+}
+
+/* Chrome, Edge, and Safari browsers */
+.overflow::-webkit-scrollbar {
+  width: 3px;
+  border-radius: 5px;
+}
+
+.overflow::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+}
+
+.overflow::-webkit-scrollbar-thumb {
+  background: #7960ff;
+  border-radius: 100vh;
+  border: none;
+  border-radius: 5px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }

@@ -1,0 +1,96 @@
+.wrapper {
+  border-radius: var(--Radius-5-max, 12px);
+  border-radius: 12px;
+  border: 1px solid rgba(248, 248, 248, 0.1);
+  background: var(
+    --Gradient-linear,
+    linear-gradient(24deg, #18181d 30.95%, #0d0d10 83.96%)
+  );
+  padding: 18px;
+  display: flex;
+  align-items: flex-end;
+  gap: 25px;
+  background: url(../../../images/realTimeEventsPattern.png);
+  background-position: right top;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.headingContainer {
+  max-width: 206px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 12px;
+}
+.title {
+  color: #e0e0e0;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144.444%;
+  letter-spacing: -0.04px;
+}
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 28px;
+  max-width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid rgba(248, 248, 248, 0.05);
+  background: #19191c;
+}
+.icon {
+  color: #ffffff;
+  font-size: 16px;
+}
+.checkedIcon {
+  font-size: 14px;
+}
+
+.info {
+  color: #7e808a;
+
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+  letter-spacing: -0.04px;
+}
+.info span {
+  color: #e0e0e0;
+}
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+.listContainer::before {
+  content: " ";
+  position: absolute;
+  width: 3px;
+  height: 95%;
+  background: rgba(248, 248, 248, 0.05);
+  left: 13px;
+  z-index: -1;
+}
+.list {
+  display: flex;
+  gap: 8px;
+}
+.updates {
+  margin-top: 3px;
+}
+@media only screen and (max-width: 1199px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

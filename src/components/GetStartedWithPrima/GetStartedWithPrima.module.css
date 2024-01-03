@@ -1,0 +1,105 @@
+.wrapper {
+  background: radial-gradient(
+    45.37% 45.35% at 50.83% -0.05%,
+    #18181b 0%,
+    #0d0d10 100%
+  );
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background: url(../../images/pattern.png);
+  background-repeat: no-repeat;
+  background-size: 100% 200px;
+  background-position: top;
+  position: relative;
+  overflow-x: hidden;
+}
+.line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.32) 21.95%,
+    rgba(255, 255, 255, 0.76) 49.97%,
+    rgba(255, 255, 255, 0.23) 77.93%,
+    rgba(255, 255, 255, 0) 104.07%
+  );
+  width: 350px;
+  height: 2px;
+}
+.headingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 580px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  color: #e0e0e0;
+  font-family: Abel;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115.152%;
+}
+.info {
+  color: #7e808a;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.04px;
+  text-align: center;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+  padding-top: 10px;
+}
+.button {
+  color: rgba(248, 248, 248, 0.69);
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(248, 248, 248, 0.09);
+  background: rgba(248, 248, 248, 0.02);
+}
+.contactButton {
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+.button:hover {
+  border: 1px solid rgba(248, 248, 248, 0.09);
+  background: rgba(248, 248, 248, 0.02);
+}
+@media only screen and (max-width: 520px) {
+  .wrapper {
+    padding: 70px 0;
+    background-size: 100% 450px;
+  }
+  .line {
+    width: 150px;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .button {
+    font-size: 14px;
+  }
+}
